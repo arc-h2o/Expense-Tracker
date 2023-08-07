@@ -12,7 +12,7 @@ void saveData(const Budget& budget, const Expense* expenses, int numExpenses) {
     std::ofstream file("data.txt"); // output file stream used to store the data in the database 
 
     if (!file) {
-        std::cerr << "\nError opening file to save the tracked records." << std::endl; // if there was an error in recording the details into the database
+        std::cerr << "\nError opening file to save the records." << std::endl; // if there was an error in recording the details into the database
         return;
     }
 
@@ -60,7 +60,7 @@ void loadData(Budget& budget, Expense* expenses, int& numExpenses) {
 int main() {
     Budget budget; // declaring budget object for the class Budget
     Expense expenses[100]; // declaring expenses array that can hold upto 100 Expense objects
-    int numExpenses = 0; 
+    int numExpenses = 0; // declaring the numExpenses as an integer and initializes as zero
 
     loadData(budget, expenses, numExpenses); // loads the previously recorded expenses if any
 
@@ -79,9 +79,9 @@ int main() {
             case 1: // 1.Add Budget
                 {   
                     std::cout << "\nAdd Budget\n";
-                    double budgetAmount;
+                    double budgetAmount; // declaring the budgetAmount variable as a double
                     std::cout << "\nEnter budget amount: Rs ";
-                    std::cin >> budgetAmount;
+                    std::cin >> budgetAmount; 
                     budget.addAmount(budgetAmount); // adds the amount to the budget
                     break;
                 }
@@ -93,11 +93,11 @@ int main() {
                         std::cout << "\nPlease add budget first." << std::endl; // Budget is not added before the expense is added
                         break;
                     }
-                    std::string date, description;
-                    double amount;
+                    std::string date, description; // declaring the date and description variables as string
+                    double amount; // declaring the amount variable as a double
                     std::cout << "\nEnter date (DD/MM/YYYY): ";
                     std::cin.ignore(); // clears any leftover newline character from the input buffer
-                    std::getline(std::cin, date);
+                    std::getline(std::cin, date); 
                     std::cout << "\nEnter description: ";
                     std::getline(std::cin, description);
                     std::cout << "\nEnter amount: Rs ";
@@ -108,7 +108,7 @@ int main() {
                     else {
                         budget.subtractAmount(amount); // subtracts the amount from the budget
                         expenses[numExpenses] = Expense(date, description, amount); // Expense is recorded
-                        numExpenses++;
+                        numExpenses++; // increment numExpenses i.e. number of expenses
                         std::cout << "\nExpense added successfully." << std::endl;
                     }
                     break;
@@ -120,11 +120,11 @@ int main() {
                     budget.displayRemainingBudget(); // displays the remaining budget
                     std::cout << "\nExpenses List:\n";
                     std::cout << "---------------------------------------------------------\n";
-                    std::cout << std::left << std::setw(12) << "Date" << std::setw(25) << "Description" << std::setw(12) << "Amount (Rs )" << std::endl;
+                    std::cout << std::left << std::setw(15) << "Date" << std::setw(25) << "Description" << std::setw(12) << "Amount (Rs )" << std::endl;
                     std::cout << "---------------------------------------------------------" << std::endl;
                     for (int i = 0; i < numExpenses; i++) { 
                         // displays the date, description and amount details of the expense
-                        std::cout << std::left << std::setw(12) << expenses[i].getDate() << std::setw(25) << expenses[i].getDescription() << std::setw(12) << expenses[i].getAmount() << std::endl;
+                        std::cout << std::left << std::setw(15) << expenses[i].getDate() << std::setw(25) << expenses[i].getDescription() << std::setw(12) << expenses[i].getAmount() << std::endl;
                     }
                     break;
                 }

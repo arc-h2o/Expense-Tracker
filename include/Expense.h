@@ -5,9 +5,9 @@
 
 class Expense {
     private:
-        std::string date; // declare the date variable as a string
-        std::string description; // declare the description variable as a string
-        double amount; // declare the amount variable as a double
+        std::string date; // declaring the date variable as a string
+        std::string description; // declaring the description variable as a string
+        double amount; // declaring the amount variable as a double
 
     public:
         Expense(); // default constructor

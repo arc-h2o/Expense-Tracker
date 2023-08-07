@@ -1,11 +1,11 @@
 #ifndef BUDGET_H // checks if the symbol is defined (header guard)
-#define BUDGET_H // defines the symbol if it is not defined
+#define BUDGET_H // defines the symbol if it is not defined (header guard)
 
 #include <iostream> // includes the input-output stream library
 
 class Budget {
     private:
-        double amount;
+        double amount; // declaring the amount variable as a double
 
     public:
         Budget(); // default constructor
@@ -19,4 +19,4 @@ class Budget {
         friend std::istream& operator>>(std::istream& is, Budget& budget); // overloads the operator ">>" to be used as to input the budget
 };
 
-#endif // marks the end of the guards
+#endif // marks the end of the header guards
