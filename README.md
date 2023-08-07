@@ -42,5 +42,5 @@ Contributions to this project are welcome! Here are a few ways you can contribut
 
 **Note**: This project is for educational purposes and may not include advanced error handling or production-level features. Use it as a starting point for learning and building more sophisticated applications.
 
-For questions or support, please [open an issue](https://github.com/arc-h2o/expense-tracker/issues).
+For bug report or feature request, please [open an issue](https://github.com/arc-h2o/OOP-Project-1/issues).
 
