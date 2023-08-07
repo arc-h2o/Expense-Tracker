@@ -2,6 +2,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/c++,vs
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,vs
 
+.vscode/settings.json
+data.txt
+expense_tracker.exe
+
 ### C++ ###
 # Prerequisites
 *.d
