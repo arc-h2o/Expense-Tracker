@@ -1,2 +1,4 @@
 # OOP-Project-1
-Exploring OOP with C++: A simple project to deepen my understanding and skills.
+## Expense Tracker
+**Introduction:**
+-A CLI application to track your Budget and your Expenses.
