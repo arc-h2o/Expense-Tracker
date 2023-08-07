@@ -37,10 +37,7 @@ Contributions to this project are welcome! Here are a few ways you can contribut
 ## Acknowledgments
 
 - This project was developed as part of a learning exercise in C++ and object-oriented programming.
-
----
-
-**Note**: This project is for educational purposes and may not include advanced error handling or production-level features. Use it as a starting point for learning and building more sophisticated applications.
+- This project is for educational purposes and may not include advanced error handling or production-level features. Use it as a starting point for learning and building more sophisticated    applications.
 
 For bug report or feature request, please [open an issue](https://github.com/arc-h2o/OOP-Project-1/issues).
 
