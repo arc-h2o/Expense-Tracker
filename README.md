@@ -12,7 +12,8 @@ Expense Tracker is a simple command-line program implemented in C++ that allows 
 
 ## Getting Started
 
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine using the following command in your terminal: 
+   git clone <repository_url>
 2. Navigate to the repository directory.
 3. Now, compile using the following command in your terminal:
    g++ -o Expense_Tracker src/*.cpp -I include
